@@ -1,8 +1,12 @@
+(ns puzzle.komachi
+  (:gen-class)
+  (:require [clojure.math.combinatorics :refer [combinations]]))
+
 ;; Komachi Mushi Kui Zan (小町虫食い算)
 ;; 
-;; Quiz: Find a triplet of three-digit prime numbers
-;; where the nine digits are composed of 1, 2, 3, 4, 5, 6, 7, 8 and 9
-;; and the sum of the triplets ('JKL' below) is a three-digit number.
+;; Quiz: Find three three-digit prime numbers
+;; where their 9 digits are composed of 1, 2, 3, 4, 5, 6, 7, 8 and 9
+;; and the sum of them ('JKL' below) is also a three-digit number.
 ;; 
 ;;   A B C
 ;;   D E F
@@ -16,13 +20,9 @@
 ;; 
 ;; [1] http://www.amazon.co.jp/dp/B00KLPFPZE
 
-(ns puzzle.komachi
-  (:gen-class)
-  (:require [clojure.math.combinatorics :refer [combinations]]))
-
 (def prime-numbers
   "Returns a lazy-seq of prime numbers"
-  ;; from https://gist.github.com/kohyama/8e599b2e765ad4256f32
+  ;; source: https://gist.github.com/kohyama/8e599b2e765ad4256f32
   ((fn f [x]
      (cons x
        (lazy-seq
@@ -34,28 +34,57 @@
                 (iterate inc (inc x))))))))
    2))
 
+(defn digits
+  "Returns a vector of each digit numbers of num"
+  ;; source: http://stackoverflow.com/questions/29929325/how-to-split-a-number-in-clojure/29942388#29942388
+  [num]
+  (if (pos? num)
+    (conj (digits (quot num 10)) (mod num 10) )
+    []))
+
 (defn komachi?
-  "Returns true if a list of three natural three-digit numbers
-   has numbers from 1 to 9 in their 9 digits"
-  [triplet]
-  (= (sort (mapcat #(seq (str %)) triplet))
-     '(\1 \2 \3 \4 \5 \6 \7 \8 \9)))
+  "Returns true if digits of three three-digit prime nums
+   are equal to (1 2 3 4 5 6 7 8 9)"
+  [nums]
+  (let [sorted-digits (sort (mapcat digits nums))]
+    (= sorted-digits '(1 2 3 4 5 6 7 8 9))))
 
 (defn three-digit-sum?
-  "Returns true if a sum of triplet is a three digit in decimal form"
-  [triplet]
-  (<= 100 (apply + triplet) 999))
+  "Returns true if a sum of three numbers is a three digit decimal number"
+  [nums]
+  (= 3 (count (digits (apply + nums)))))
 
-(def three-digit-prime-numbers
-  (take-while #(< % 1000)
-              (drop-while #(< % 100) prime-numbers)))
+(defn distinct-three-digits?
+  "Returns true if three-digit num is composed of distinct digits"
+  [num]
+  (= 3 ((comp count distinct digits) num)))
 
-(def all-possible-combinations
-  (->> (combinations three-digit-prime-numbers 3) ; take triplets
-       (filter #(and (komachi? %)
-                     (three-digit-sum? %)))))
+(defn prune
+  "Returns pruned prime numbers"
+  [primes]
+  (filter
+   #(and
+     (distinct-three-digits? %)
+     (not-any? zero? (digits %)))
+   primes))
+
+(defn satisfying?
+  "Returns true if nums are satisfying the conditions:
+   (1) nums are komachi numbers, and
+   (2) a sum of nums is three digits."
+  [nums]
+  (and (komachi? nums)
+       (three-digit-sum? nums)))
+
+(defn solve
+  "Returns solutions to the quiz"
+  []
+  (let [three-digit-primes (take-while #(< % 1000)
+                           (drop-while #(< % 100) prime-numbers))]
+    (->> (combinations (prune three-digit-primes) 3)
+         (filter satisfying?))))
 
 (defn -main
-  "Solve the Komachi Mushi Kui Zan puzzle"
+  "Solve the Komachi Mushi Kui Zan(小町虫食い算) puzzle"
   [& args]
-  (println all-possible-combinations))
+  (println (time (doall (solve)))))
