@@ -1,7 +1,8 @@
 (ns puzzle.core
-  (:gen-class))
+  (:gen-class)
+  (:require [puzzle.komachi :as komachi]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Display a usage"
   [& args]
-  (println "Hello, World!"))
+  (println "Komachi Mushi Kui Zan (小町虫食い算): $ lein run -m puzzle.komachi"))
