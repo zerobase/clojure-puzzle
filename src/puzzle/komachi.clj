@@ -1,6 +1,6 @@
 ;; Komachi Mushi Kui Zan (小町虫食い算)
 ;; 
-;; Finding a triplet of three-digit prime numbers
+;; Quiz: Find a triplet of three-digit prime numbers
 ;; where the nine digits are composed of 1, 2, 3, 4, 5, 6, 7, 8 and 9
 ;; and the sum of the triplets ('JKL' below) is a three-digit number.
 ;; 
@@ -9,15 +9,20 @@
 ;; + G H I
 ;; --------
 ;;   J K L
-
+;; 
+;; This puzzle was originally created by Yoshigara Takaki (吉柄貴樹)
+;; and printed on C MAGAZINE February 1996 Issue [1]
+;; published by Gijutsu-Hyohron Co., Ltd. (技術評論社).
+;; 
+;; [1] http://www.amazon.co.jp/dp/B00KLPFPZE
 
 (ns puzzle.komachi
   (:gen-class)
   (:require [clojure.math.combinatorics :refer [combinations]]))
 
 (def prime-numbers
-  "Returns a lazy-seq of prime numbers
-   (from: https://gist.github.com/kohyama/8e599b2e765ad4256f32)"
+  "Returns a lazy-seq of prime numbers"
+  ;; from https://gist.github.com/kohyama/8e599b2e765ad4256f32
   ((fn f [x]
      (cons x
        (lazy-seq
