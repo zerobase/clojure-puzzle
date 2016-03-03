@@ -6,15 +6,15 @@ Computer puzzles for studying Clojure programming
 
     $ git clone https://github.com/zerobase/clojure-puzzle.git
 
-## Usage
+## Requirements
 
 You need [Leiningen](http://leiningen.org/).
 
-    $ lein run
+## Usage
 
-or
+To run a puzzle:
 
-    $ lein lein run -m puzzle.komachi
+    $ lein run -m puzzle.komachi
 
 ## License
 
