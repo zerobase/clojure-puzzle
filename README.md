@@ -1,36 +1,24 @@
-# puzzle
+# Clojure Puzzle
 
-FIXME: description
+Computer puzzles for studying Clojure programming
 
 ## Installation
 
-Download from http://example.com/FIXME.
+    $ git clone https://github.com/zerobase/clojure-puzzle.git
 
 ## Usage
 
-FIXME: explanation
+You need [Leiningen](http://leiningen.org/).
 
-    $ java -jar puzzle-0.1.0-standalone.jar [args]
+    $ lein run
 
-## Options
+or
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+    $ lein lein run -m puzzle.komachi
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Hideto Ishibashi
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
