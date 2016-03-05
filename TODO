@@ -1,0 +1,8 @@
+TODOS
+=====
+
+puzzle.komachi
+--------------
+
+- Prune progressive instead of using `combinations`
+

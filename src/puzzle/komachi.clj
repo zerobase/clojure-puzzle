@@ -20,9 +20,9 @@
 ;; 
 ;; [1] http://www.amazon.co.jp/dp/B00KLPFPZE
 
+;; source: https://gist.github.com/kohyama/8e599b2e765ad4256f32
 (def prime-numbers
-  "Returns a lazy-seq of prime numbers"
-  ;; source: https://gist.github.com/kohyama/8e599b2e765ad4256f32
+  "A lazy-seq of prime numbers"
   ((fn f [x]
      (cons x
        (lazy-seq
@@ -34,9 +34,9 @@
                 (iterate inc (inc x))))))))
    2))
 
+;; source: http://stackoverflow.com/questions/29929325/how-to-split-a-number-in-clojure/29942388#29942388
 (defn digits
   "Returns a vector of each digit numbers of num"
-  ;; source: http://stackoverflow.com/questions/29929325/how-to-split-a-number-in-clojure/29942388#29942388
   [num]
   (if (pos? num)
     (conj (digits (quot num 10)) (mod num 10) )
@@ -68,21 +68,28 @@
      (not-any? zero? (digits %)))
    primes))
 
-(defn satisfying?
-  "Returns true if nums are satisfying the conditions:
+(defn valid?
+  "Returns true if nums is a valid solution:
    (1) nums are komachi numbers, and
    (2) a sum of nums is three digits."
   [nums]
   (and (komachi? nums)
        (three-digit-sum? nums)))
 
+(defn three-digit-primes
+  "Returns a lazy-seq of three digit prime numbers"
+  []
+  (take-while #(< % 1000) (drop-while #(< % 100) prime-numbers)))
+
+(defn generate-combinations
+  "Returns triplets of prime numbers"
+  []
+  (combinations (prune (three-digit-primes)) 3))
+
 (defn solve
   "Returns solutions to the quiz"
   []
-  (let [three-digit-primes (take-while #(< % 1000)
-                           (drop-while #(< % 100) prime-numbers))]
-    (->> (combinations (prune three-digit-primes) 3)
-         (filter satisfying?))))
+  (filter valid? (generate-combinations)))
 
 (defn -main
   "Solve the Komachi Mushi Kui Zan(小町虫食い算) puzzle"
