@@ -14,7 +14,9 @@ You need [Leiningen](http://leiningen.org/).
 
 To run a puzzle:
 
-    $ lein run -m puzzle.komachi
+    $ lein figwheel
+
+then open <http://localhost:3449/devcards.html>.
 
 ## License
 
