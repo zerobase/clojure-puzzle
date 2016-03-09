@@ -110,8 +110,35 @@
 
 (defn solve [] (seek-valid-combinations 3))
 
+(defn komachi-panel-num
+  "Returns a vector of Sablono style HTML form representing a number in komachi-panel"
+  [num]
+  (vec (map #(vec [:span {:class "komachi-panel-digit"} %])
+            (digits num))))
+
+(defn komachi-panel-row
+  "Returns a vector of Sablono style HTML form representing a row in komachi-panel"
+  [num & [opts]]
+  [:div {:class "komachi-panel-row"}
+   (when (:plus opts) [:span {:class "komachi-panel-plus" } "+ "])
+   (komachi-panel-num num)])
+
+(defn komachi-panel
+  "Returns a vector of Sablono style HTML form representing komachi calculation"
+  [nums]
+  (sab/html
+   [:div {:class "komachi-panel"}
+    (komachi-panel-row (nth nums 0))
+    (komachi-panel-row (nth nums 1))
+    (komachi-panel-row (nth nums 2) {:plus true})
+    [:hr]
+    (komachi-panel-row (apply + nums))]))
+
+(defcard komachi-panel-example
+  "`(komachi-panel '(123 456 789))"
+  (sab/html (komachi-panel '(123 456 789))))
+
 (defcard solution
   "Here are all possible combinations (only one, actually)"
-  (solve))
-
-(devcards.core/start-devcard-ui!)
+  (sab/html
+   [:div (map komachi-panel (solve))]))
