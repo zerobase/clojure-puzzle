@@ -1,1 +1,23 @@
 /* puzzle CSS */
+
+.komachi-panel {
+  width: 8em;
+  text-align: right;
+  font-family: monospace;
+  font-size: 2em;
+  color: #333;
+}
+
+.komachi-panel-row {
+  margin: 0.5em;
+}
+
+.komachi-panel-digit {
+  padding: 0.2em 0.4em;
+  margin: 0.2em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.komachi-panel-plus {
+}
