@@ -12,10 +12,10 @@ return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 
 puzzle.komachi.prime_numbers = (function puzzle$komachi$f(x){
 return cljs.core.cons.call(null,x,(new cljs.core.LazySeq(null,(function (){
 return puzzle$komachi$f.call(null,cljs.core.first.call(null,cljs.core.drop_while.call(null,(function (n){
-return cljs.core.some.call(null,(function (p1__23482_SHARP_){
-return (cljs.core.mod.call(null,n,p1__23482_SHARP_) === (0));
-}),cljs.core.take_while.call(null,(function (p1__23483_SHARP_){
-return ((p1__23483_SHARP_ * p1__23483_SHARP_) <= n);
+return cljs.core.some.call(null,(function (p1__23631_SHARP_){
+return (cljs.core.mod.call(null,n,p1__23631_SHARP_) === (0));
+}),cljs.core.take_while.call(null,(function (p1__23632_SHARP_){
+return ((p1__23632_SHARP_ * p1__23632_SHARP_) <= n);
 }),puzzle.komachi.prime_numbers));
 }),cljs.core.iterate.call(null,cljs.core.inc,(x + (1))))));
 }),null,null)));
@@ -31,7 +31,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23484){var t__22240__auto__ = e23484;
+}catch (e23633){var t__22240__auto__ = e23633;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((2),(3),(5),(7),(11),(13),(17),(19),(23),(29))),cljs.core.list(new cljs.core.Symbol(null,"take","take",871646627,null),(10),new cljs.core.Symbol(null,"prime-numbers","prime-numbers",-1902029090,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -55,7 +55,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23485){var t__22240__auto__ = e23485;
+}catch (e23634){var t__22240__auto__ = e23634;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((2),(3),(5),(7),(11),(13),(17),(19),(23),(29))),cljs.core.list(new cljs.core.Symbol(null,"take","take",871646627,null),(10),new cljs.core.Symbol(null,"prime-numbers","prime-numbers",-1902029090,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -69,10 +69,10 @@ puzzle.komachi.prime_numbers_test.cljs$lang$var = new cljs.core.Var(function(){r
 /**
  * A lazy-seq of three digit prime numbers
  */
-puzzle.komachi.three_digit_primes = cljs.core.take_while.call(null,(function (p1__23486_SHARP_){
-return (p1__23486_SHARP_ < (1000));
-}),cljs.core.drop_while.call(null,(function (p1__23487_SHARP_){
-return (p1__23487_SHARP_ < (100));
+puzzle.komachi.three_digit_primes = cljs.core.take_while.call(null,(function (p1__23635_SHARP_){
+return (p1__23635_SHARP_ < (1000));
+}),cljs.core.drop_while.call(null,(function (p1__23636_SHARP_){
+return (p1__23636_SHARP_ < (100));
 }),puzzle.komachi.prime_numbers));
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"puzzle.komachi","puzzle.komachi",625304491),new cljs.core.Keyword(null,"three-digit-primes-test","three-digit-primes-test",1295561749)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"three-digit-primes-test",new cljs.core.Keyword(null,"documentation","documentation",1889593999),null,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),devcards.core.test_card.call(null,(function (){
@@ -85,7 +85,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23488){var t__22240__auto__ = e23488;
+}catch (e23637){var t__22240__auto__ = e23637;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),(101),cljs.core.list(new cljs.core.Symbol(null,"first","first",996428481,null),new cljs.core.Symbol(null,"three-digit-primes","three-digit-primes",1171680350,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -98,7 +98,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23489){var t__22240__auto__ = e23489;
+}catch (e23638){var t__22240__auto__ = e23638;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),(997),cljs.core.list(new cljs.core.Symbol(null,"last","last",-1548700637,null),new cljs.core.Symbol(null,"three-digit-primes","three-digit-primes",1171680350,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})();
 cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.rest);
@@ -120,7 +120,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23490){var t__22240__auto__ = e23490;
+}catch (e23639){var t__22240__auto__ = e23639;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),(101),cljs.core.list(new cljs.core.Symbol(null,"first","first",996428481,null),new cljs.core.Symbol(null,"three-digit-primes","three-digit-primes",1171680350,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -133,7 +133,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23491){var t__22240__auto__ = e23491;
+}catch (e23640){var t__22240__auto__ = e23640;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),(997),cljs.core.list(new cljs.core.Symbol(null,"last","last",-1548700637,null),new cljs.core.Symbol(null,"three-digit-primes","three-digit-primes",1171680350,null))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})();
 cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.rest);
@@ -163,7 +163,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23492){var t__22240__auto__ = e23492;
+}catch (e23641){var t__22240__auto__ = e23641;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol(null,"digits","digits",505896466,null),(123)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1),(2),(3)], null)),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -187,7 +187,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23493){var t__22240__auto__ = e23493;
+}catch (e23642){var t__22240__auto__ = e23642;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol(null,"digits","digits",505896466,null),(123)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1),(2),(3)], null)),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})());
 
@@ -210,60 +210,60 @@ return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 
 return devcards.core.test_doc.call(null,"True if komachi numbers(\u5C0F\u753A\u6570)");
 }),(function (){
 cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.conj,(function (){
-try{var values__22202__auto___23506 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456),(789)))),true);
-var result__22203__auto___23507 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23506);
-if(cljs.core.truth_(result__22203__auto___23507)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23506),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23655 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456),(789)))),true);
+var result__22203__auto___23656 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23655);
+if(cljs.core.truth_(result__22203__auto___23656)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23655),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23506)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23655)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23494){var t__22240__auto___23508 = e23494;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23508,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23643){var t__22240__auto___23657 = e23643;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23657,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23509 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((456),(123),(789)))),true);
-var result__22203__auto___23510 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23509);
-if(cljs.core.truth_(result__22203__auto___23510)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23509),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23658 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((456),(123),(789)))),true);
+var result__22203__auto___23659 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23658);
+if(cljs.core.truth_(result__22203__auto___23659)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23658),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23509)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23658)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23495){var t__22240__auto___23511 = e23495;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23511,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23644){var t__22240__auto___23660 = e23644;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23660,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23512 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456)))),true);
-var result__22203__auto___23513 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23512);
-if(cljs.core.truth_(result__22203__auto___23513)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23512),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23661 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456)))),true);
+var result__22203__auto___23662 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23661);
+if(cljs.core.truth_(result__22203__auto___23662)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23661),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23512)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23661)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23496){var t__22240__auto___23514 = e23496;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23514,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23645){var t__22240__auto___23663 = e23645;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23663,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23515 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123)))),true);
-var result__22203__auto___23516 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23515);
-if(cljs.core.truth_(result__22203__auto___23516)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23515),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23664 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123)))),true);
+var result__22203__auto___23665 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23664);
+if(cljs.core.truth_(result__22203__auto___23665)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23664),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23515)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23664)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23497){var t__22240__auto___23517 = e23497;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23517,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23646){var t__22240__auto___23666 = e23646;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23666,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23518 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(777)))),false);
-var result__22203__auto___23519 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23518);
-if(cljs.core.truth_(result__22203__auto___23519)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23518),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23667 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(777)))),false);
+var result__22203__auto___23668 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23667);
+if(cljs.core.truth_(result__22203__auto___23668)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23667),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23518)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23667)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23498){var t__22240__auto___23520 = e23498;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23520,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23647){var t__22240__auto___23669 = e23647;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23669,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 try{var values__22202__auto__ = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(770)))),false);
 var result__22203__auto__ = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto__);
@@ -274,7 +274,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23499){var t__22240__auto__ = e23499;
+}catch (e23648){var t__22240__auto__ = e23648;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(770))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})()
 );
@@ -292,60 +292,60 @@ return cljs.test.test_var.call(null,puzzle$komachi$komachi_QMARK__test.cljs$lang
 puzzle.komachi.komachi_QMARK__test.cljs$lang$test = (function (){
 
 cljs.test.update_current_env_BANG_.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"testing-contexts","testing-contexts",-1485646523)], null),cljs.core.conj,(function (){
-try{var values__22202__auto___23521 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456),(789)))),true);
-var result__22203__auto___23522 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23521);
-if(cljs.core.truth_(result__22203__auto___23522)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23521),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23670 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456),(789)))),true);
+var result__22203__auto___23671 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23670);
+if(cljs.core.truth_(result__22203__auto___23671)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23670),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23521)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23670)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23500){var t__22240__auto___23523 = e23500;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23523,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23649){var t__22240__auto___23672 = e23649;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23672,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23524 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((456),(123),(789)))),true);
-var result__22203__auto___23525 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23524);
-if(cljs.core.truth_(result__22203__auto___23525)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23524),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23673 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((456),(123),(789)))),true);
+var result__22203__auto___23674 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23673);
+if(cljs.core.truth_(result__22203__auto___23674)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23673),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23524)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23673)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23501){var t__22240__auto___23526 = e23501;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23526,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23650){var t__22240__auto___23675 = e23650;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((456),(123),(789))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23675,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23527 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456)))),true);
-var result__22203__auto___23528 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23527);
-if(cljs.core.truth_(result__22203__auto___23528)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23527),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23676 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123),(456)))),true);
+var result__22203__auto___23677 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23676);
+if(cljs.core.truth_(result__22203__auto___23677)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23676),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23527)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23676)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23502){var t__22240__auto___23529 = e23502;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23529,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23651){var t__22240__auto___23678 = e23651;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123),(456))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23678,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23530 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123)))),true);
-var result__22203__auto___23531 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23530);
-if(cljs.core.truth_(result__22203__auto___23531)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23530),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23679 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((123)))),true);
+var result__22203__auto___23680 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23679);
+if(cljs.core.truth_(result__22203__auto___23680)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23679),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23530)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23679)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23503){var t__22240__auto___23532 = e23503;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23532,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23652){var t__22240__auto___23681 = e23652;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),true,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((123))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23681,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
-try{var values__22202__auto___23533 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(777)))),false);
-var result__22203__auto___23534 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23533);
-if(cljs.core.truth_(result__22203__auto___23534)){
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23533),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+try{var values__22202__auto___23682 = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(777)))),false);
+var result__22203__auto___23683 = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto___23682);
+if(cljs.core.truth_(result__22203__auto___23683)){
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"pass","pass",1574159993),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core.cons.call(null,cljs.core._EQ_,values__22202__auto___23682),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 } else {
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23533)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"fail","fail",1706214930),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,cljs.core.cons.call(null,new cljs.core.Symbol(null,"=","=",-1501502141,null),values__22202__auto___23682)),new cljs.core.Symbol(null,"not","not",1044554643,null)),new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 
-}catch (e23504){var t__22240__auto___23535 = e23504;
-cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23535,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
+}catch (e23653){var t__22240__auto___23684 = e23653;
+cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(777))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto___23684,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }
 try{var values__22202__auto__ = cljs.core._conj.call(null,cljs.core._conj.call(null,cljs.core.List.EMPTY,puzzle.komachi.komachi_QMARK_.call(null,cljs.core.list((444),(111),(770)))),false);
 var result__22203__auto__ = cljs.core.apply.call(null,cljs.core._EQ_,values__22202__auto__);
@@ -356,7 +356,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__22203__auto__;
-}catch (e23505){var t__22240__auto__ = e23505;
+}catch (e23654){var t__22240__auto__ = e23654;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),false,cljs.core.list(new cljs.core.Symbol(null,"komachi?","komachi?",89912484,null),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list((444),(111),(770))))),new cljs.core.Keyword(null,"actual","actual",107306363),t__22240__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }})()
 );
@@ -385,8 +385,8 @@ return and__19538__auto__;
  * Returns (partially or completely) valid combinations of prime numbers
  */
 puzzle.komachi.make_combinations = (function puzzle$komachi$make_combinations(primes,comb){
-return cljs.core.filter.call(null,puzzle.komachi.valid_QMARK_,cljs.core.map.call(null,(function (p1__23536_SHARP_){
-return cljs.core.cons.call(null,p1__23536_SHARP_,comb);
+return cljs.core.filter.call(null,puzzle.komachi.valid_QMARK_,cljs.core.map.call(null,(function (p1__23685_SHARP_){
+return cljs.core.cons.call(null,p1__23685_SHARP_,comb);
 }),primes));
 });
 /**
@@ -402,8 +402,8 @@ puzzle.komachi.seek_valid_combinations = (function puzzle$komachi$seek_valid_com
 if(cljs.core._EQ_.call(null,n,(1))){
 return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,cljs.core.List.EMPTY);
 } else {
-return puzzle.komachi.uniq.call(null,cljs.core.mapcat.call(null,(function (p1__23537_SHARP_){
-return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,p1__23537_SHARP_);
+return puzzle.komachi.uniq.call(null,cljs.core.mapcat.call(null,(function (p1__23686_SHARP_){
+return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,p1__23686_SHARP_);
 }),puzzle$komachi$seek_valid_combinations.call(null,(n - (1)))));
 }
 });
@@ -412,8 +412,8 @@ puzzle.komachi.solutions = puzzle.komachi.seek_valid_combinations.call(null,(3))
  * Returns a vector of Sablono style HTML form representing a number in komachi-panel
  */
 puzzle.komachi.komachi_panel_num = (function puzzle$komachi$komachi_panel_num(num){
-return cljs.core.vec.call(null,cljs.core.map.call(null,(function (p1__23538_SHARP_){
-return cljs.core.vec.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"komachi-panel-digit"], null),p1__23538_SHARP_], null));
+return cljs.core.vec.call(null,cljs.core.map.call(null,(function (p1__23687_SHARP_){
+return cljs.core.vec.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"komachi-panel-digit"], null),p1__23687_SHARP_], null));
 }),puzzle.komachi.digits.call(null,num)));
 });
 /**
@@ -421,14 +421,14 @@ return cljs.core.vec.call(null,new cljs.core.PersistentVector(null, 3, 5, cljs.c
  */
 puzzle.komachi.komachi_panel_row = (function puzzle$komachi$komachi_panel_row(var_args){
 var args__20615__auto__ = [];
-var len__20608__auto___23543 = arguments.length;
-var i__20609__auto___23544 = (0);
+var len__20608__auto___23692 = arguments.length;
+var i__20609__auto___23693 = (0);
 while(true){
-if((i__20609__auto___23544 < len__20608__auto___23543)){
-args__20615__auto__.push((arguments[i__20609__auto___23544]));
+if((i__20609__auto___23693 < len__20608__auto___23692)){
+args__20615__auto__.push((arguments[i__20609__auto___23693]));
 
-var G__23545 = (i__20609__auto___23544 + (1));
-i__20609__auto___23544 = G__23545;
+var G__23694 = (i__20609__auto___23693 + (1));
+i__20609__auto___23693 = G__23694;
 continue;
 } else {
 }
@@ -439,18 +439,18 @@ var argseq__20616__auto__ = ((((1) < args__20615__auto__.length))?(new cljs.core
 return puzzle.komachi.komachi_panel_row.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__20616__auto__);
 });
 
-puzzle.komachi.komachi_panel_row.cljs$core$IFn$_invoke$arity$variadic = (function (num,p__23541){
-var vec__23542 = p__23541;
-var opts = cljs.core.nth.call(null,vec__23542,(0),null);
+puzzle.komachi.komachi_panel_row.cljs$core$IFn$_invoke$arity$variadic = (function (num,p__23690){
+var vec__23691 = p__23690;
+var opts = cljs.core.nth.call(null,vec__23691,(0),null);
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"komachi-panel-row"], null),(cljs.core.truth_(new cljs.core.Keyword(null,"plus","plus",211540661).cljs$core$IFn$_invoke$arity$1(opts))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),"komachi-panel-plus"], null),"+ "], null):null),puzzle.komachi.komachi_panel_num.call(null,num)], null);
 });
 
 puzzle.komachi.komachi_panel_row.cljs$lang$maxFixedArity = (1);
 
-puzzle.komachi.komachi_panel_row.cljs$lang$applyTo = (function (seq23539){
-var G__23540 = cljs.core.first.call(null,seq23539);
-var seq23539__$1 = cljs.core.next.call(null,seq23539);
-return puzzle.komachi.komachi_panel_row.cljs$core$IFn$_invoke$arity$variadic(G__23540,seq23539__$1);
+puzzle.komachi.komachi_panel_row.cljs$lang$applyTo = (function (seq23688){
+var G__23689 = cljs.core.first.call(null,seq23688);
+var seq23688__$1 = cljs.core.next.call(null,seq23688);
+return puzzle.komachi.komachi_panel_row.cljs$core$IFn$_invoke$arity$variadic(G__23689,seq23688__$1);
 });
 /**
  * Returns a vector of Sablono style HTML form representing komachi calculation
@@ -462,9 +462,9 @@ devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, 
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"komachi-panel-example",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"`(komachi-panel '(123 456 789))",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),sablono.interpreter.interpret.call(null,puzzle.komachi.komachi_panel.call(null,cljs.core.list((123),(456),(789)))),new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
 })], null));
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"puzzle.komachi","puzzle.komachi",625304491),new cljs.core.Keyword(null,"solution","solution",-1727231491)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
-return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"solution",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"Here are all possible combinations (only one, actually)",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var attrs23550 = cljs.core.map.call(null,puzzle.komachi.komachi_panel,puzzle.komachi.solutions);
-return cljs.core.apply.call(null,React.createElement,"div",((cljs.core.map_QMARK_.call(null,attrs23550))?sablono.interpreter.attributes.call(null,attrs23550):null),cljs.core.remove.call(null,cljs.core.nil_QMARK_,((cljs.core.map_QMARK_.call(null,attrs23550))?cljs.core.PersistentVector.EMPTY:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs23550)], null))));
+return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"solution",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"Here are all possible combinations (only one, actually)",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var attrs23699 = cljs.core.map.call(null,puzzle.komachi.komachi_panel,puzzle.komachi.solutions);
+return cljs.core.apply.call(null,React.createElement,"div",((cljs.core.map_QMARK_.call(null,attrs23699))?sablono.interpreter.attributes.call(null,attrs23699):null),cljs.core.remove.call(null,cljs.core.nil_QMARK_,((cljs.core.map_QMARK_.call(null,attrs23699))?cljs.core.PersistentVector.EMPTY:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs23699)], null))));
 })(),new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
 })], null));
 
-//# sourceMappingURL=komachi.js.map?rel=1457527093903
+//# sourceMappingURL=komachi.js.map?rel=1457527189045

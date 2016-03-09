@@ -10,7 +10,10 @@
 
 (defcard first-card
   (sab/html [:div
-             [:h1 "This is your first devcard!"]]))
+             [:h1 "Clojure Puzzle"]
+             [:p "Computer puzzles for studying Clojure programming"]
+             [:p "Source: "
+              [:a {:href "https://github.com/zerobase/clojure-puzzle"} "zerobase/clojure-puzzle at GitHub"]]]))
 
 (defn main []
   ;; conditionally start the app based on whether the #main-app-area
