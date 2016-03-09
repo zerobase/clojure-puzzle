@@ -10,6 +10,10 @@ Computer puzzles for studying Clojure programming
 
 You need [Leiningen](http://leiningen.org/).
 
+## Demo
+
+<http://ja.ishibashihideto.net/clojure-puzzle/>
+
 ## Usage
 
 To run a puzzle:
