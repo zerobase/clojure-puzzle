@@ -18,4 +18,4 @@ return null;
 });
 puzzle.core.main.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1457525952362
+//# sourceMappingURL=core.js.map?rel=1457527093936

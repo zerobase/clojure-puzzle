@@ -94,21 +94,24 @@
        (<= 100 (apply + nums) 999))) ; a sum of nums is three digit
 
 (defn make-combinations
+  "Returns (partially or completely) valid combinations of prime numbers"
   [primes comb]
   (filter valid? (map #(cons % comb) primes)))
 
 (defn uniq
+  "Returns unique sequences (item-order-agnostic comparation)"
   [seq]
   (distinct (map sort seq)))
 
 (defn seek-valid-combinations
+  "Returns valid combinations (seeking recursively for n depth)"
   [n]
   (if (= n 1)
     (make-combinations three-digit-primes '())
     (uniq (mapcat #(make-combinations three-digit-primes %)
                   (seek-valid-combinations (dec n))))))
 
-(defn solve [] (seek-valid-combinations 3))
+(def solutions (seek-valid-combinations 3))
 
 (defn komachi-panel-num
   "Returns a vector of Sablono style HTML form representing a number in komachi-panel"
@@ -141,4 +144,4 @@
 (defcard solution
   "Here are all possible combinations (only one, actually)"
   (sab/html
-   [:div (map komachi-panel (solve))]))
+   [:div (map komachi-panel solutions)]))
