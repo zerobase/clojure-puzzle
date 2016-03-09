@@ -8,7 +8,7 @@
 
 (enable-console-print!)
 
-(defcard first-card
+(defcard readme
   (sab/html [:div
              [:h1 "Clojure Puzzle"]
              [:p "Computer puzzles for studying Clojure programming"]
