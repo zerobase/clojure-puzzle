@@ -111,7 +111,7 @@
     (uniq (mapcat #(make-combinations three-digit-primes %)
                   (seek-valid-combinations (dec n))))))
 
-(def solutions (seek-valid-combinations 3))
+(defn solve [] (seek-valid-combinations 3))
 
 (defn komachi-panel-num
   "Returns a vector of Sablono style HTML form representing a number in komachi-panel"
@@ -138,10 +138,21 @@
     (komachi-panel-row (apply + nums))]))
 
 (defcard komachi-panel-example
-  "`(komachi-panel '(123 456 789))"
+  "`(komachi-panel '(123 456 789))`"
   (sab/html (komachi-panel '(123 456 789))))
 
-(defcard solution
-  "Here are all possible combinations (only one, actually)"
-  (sab/html
-   [:div (map komachi-panel solutions)]))
+(defn solutions-card [state]
+  (let [handler (fn [s]
+                  (assoc-in s
+                            [:solutions]
+                            (time (doall (solve)))))
+        solutions (:solutions @state)]
+    (sab/html
+     [:div
+      [:button {:onClick #(swap! state handler)} "solve"]
+      (map komachi-panel solutions)
+      [:p "There are " (count solutions) " solutions."]])))
+
+(defcard solutions
+  (fn [state _] (solutions-card state))
+  {:solutions []})
