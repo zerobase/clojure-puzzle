@@ -24,8 +24,9 @@ goog.addDependency("../cljs/test.js", ['cljs.test'], ['cljs.core', 'cljs.pprint'
 goog.addDependency("../showdown.inc.js", ['cljsjs.showdown'], []);
 goog.addDependency("../devcards/util/markdown.js", ['devcards.util.markdown'], ['cljs.core', 'cljsjs.showdown', 'clojure.string']);
 goog.addDependency("../devcards/core.js", ['devcards.core'], ['devcards.util.utils', 'devcards.system', 'cljs.core', 'cljs.test', 'cljs.core.async', 'sablono.core', 'devcards.util.edn_renderer', 'devcards.util.markdown', 'clojure.string']);
-goog.addDependency("../puzzle/komachi.js", ['puzzle.komachi'], ['cljs.core', 'cljs.test', 'sablono.core']);
-goog.addDependency("../puzzle/core.js", ['puzzle.core'], ['cljs.core', 'sablono.core', 'puzzle.komachi']);
+goog.addDependency("../puzzle/komachi.js", ['puzzle.komachi'], ['cljs.core']);
+goog.addDependency("../puzzle/komachi_ui.js", ['puzzle.komachi_ui'], ['cljs.core', 'cljs.test', 'sablono.core', 'puzzle.komachi']);
+goog.addDependency("../puzzle/core.js", ['puzzle.core'], ['puzzle.komachi_ui', 'cljs.core', 'sablono.core']);
 goog.addDependency("../figwheel/client/utils.js", ['figwheel.client.utils'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../figwheel/client/file_reloading.js", ['figwheel.client.file_reloading'], ['goog.string', 'goog.net.jsloader', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'clojure.set', 'figwheel.client.utils', 'clojure.string']);
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core']);

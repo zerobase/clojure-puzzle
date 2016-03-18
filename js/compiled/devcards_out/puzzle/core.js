@@ -2,7 +2,7 @@
 goog.provide('puzzle.core');
 goog.require('cljs.core');
 goog.require('sablono.core');
-goog.require('puzzle.komachi');
+goog.require('puzzle.komachi_ui');
 cljs.core.enable_console_print_BANG_.call(null);
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"puzzle.core","puzzle.core",-897464470),new cljs.core.Keyword(null,"readme","readme",-85226442)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"readme",new cljs.core.Keyword(null,"documentation","documentation",1889593999),null,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),React.createElement("div",null,React.createElement("h1",null,"Clojure Puzzle"),React.createElement("p",null,"Computer puzzles for studying Clojure programming"),React.createElement("p",null,"Source: ",React.createElement("a",{"href": "https://github.com/zerobase/clojure-puzzle"},"zerobase/clojure-puzzle at GitHub"))),new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
@@ -18,4 +18,4 @@ return null;
 });
 puzzle.core.main.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1457528873334
+//# sourceMappingURL=core.js.map?rel=1458302994601

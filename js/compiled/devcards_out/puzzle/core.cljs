@@ -2,7 +2,7 @@
   (:require
    #_[om.core :as om :include-macros true]
    [sablono.core :as sab :include-macros true]
-   [puzzle.komachi])
+   [puzzle.komachi-ui])
   (:require-macros
    [devcards.core :as dc :refer [defcard deftest]]))
 
