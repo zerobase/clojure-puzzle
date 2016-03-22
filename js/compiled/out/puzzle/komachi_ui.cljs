@@ -11,17 +11,9 @@
   "# Komachi Mushi Kui Zan (小町虫食い算)
 
    Quiz: Find three three-digit prime numbers
-   where their 9 digits are composed of 1, 2, 3, 4, 5, 6, 7, 8 and 9
-   and the sum of them ('JKL' below) is also a three-digit number.
+   where their nine digits are distinct, from 1 to 9,
+   and the sum of them is also a three-digit number.
    
-   ```
-     A B C
-     D E F
-   + G H I
-   --------
-     J K L
-   ```
-
    This puzzle was originally created by Yoshigara Takaki (吉柄貴樹)
    and printed on [C MAGAZINE February 1996 Issue][1]
    published by Gijutsu-Hyohron Co., Ltd. (技術評論社).
@@ -75,15 +67,17 @@
   (komachi-panel '(123 456 789)))
 
 (defn komachi-solution-component [state]
-  (om/component
-    (sab/html
-     [:div
-      [:button
-       {:onClick #(om/update! state :solutions
-                              (time (doall (komachi/solve))))}
-       "solve"]
-      (map komachi-panel (:solutions @state))
-      [:p "There are " (count (:solutions @state)) " solutions."]])))
+  (let [s (:solutions @state)
+        c (count s)]
+    (om/component
+     (sab/html
+      [:div
+       [:button
+        {:onClick #(om/update! state :solutions
+                               (time (doall (komachi/solve))))}
+        "solve"]
+       (map komachi-panel s)
+       (when (pos? c) [:p "There are " c " solutions."])]))))
 
 (defcard solutions
   (dc/om-root komachi-solution-component)

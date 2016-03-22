@@ -25,6 +25,12 @@
    (sab/html
     [:div
      [:h2 "Komachi Mushi Kui Zan (小町虫食い算)"]
+     [:p "Quiz: Find three three-digit prime numbers
+          where their nine digits are distinct, from 1 to 9,
+          and the sum of them is also a three-digit number."]
+     [:p "This puzzle was originally created by Yoshigara Takaki (吉柄貴樹)
+          and printed on C MAGAZINE February 1996 Issue
+          published by Gijutsu-Hyohron Co., Ltd. (技術評論社)."]
      (om/build komachi-ui/komachi-solution-component state)])))
 
 (defn main-component [state owner]

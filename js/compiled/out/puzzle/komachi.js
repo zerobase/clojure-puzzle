@@ -7,10 +7,10 @@ goog.require('cljs.core');
 puzzle.komachi.prime_numbers = (function puzzle$komachi$f(x){
 return cljs.core.cons.call(null,x,(new cljs.core.LazySeq(null,(function (){
 return puzzle$komachi$f.call(null,cljs.core.first.call(null,cljs.core.drop_while.call(null,(function (n){
-return cljs.core.some.call(null,(function (p1__35601_SHARP_){
-return (cljs.core.mod.call(null,n,p1__35601_SHARP_) === (0));
-}),cljs.core.take_while.call(null,(function (p1__35602_SHARP_){
-return ((p1__35602_SHARP_ * p1__35602_SHARP_) <= n);
+return cljs.core.some.call(null,(function (p1__25411_SHARP_){
+return (cljs.core.mod.call(null,n,p1__25411_SHARP_) === (0));
+}),cljs.core.take_while.call(null,(function (p1__25412_SHARP_){
+return ((p1__25412_SHARP_ * p1__25412_SHARP_) <= n);
 }),puzzle.komachi.prime_numbers));
 }),cljs.core.iterate.call(null,cljs.core.inc,(x + (1))))));
 }),null,null)));
@@ -18,10 +18,10 @@ return ((p1__35602_SHARP_ * p1__35602_SHARP_) <= n);
 /**
  * A lazy-seq of three digit prime numbers
  */
-puzzle.komachi.three_digit_primes = cljs.core.take_while.call(null,(function (p1__35603_SHARP_){
-return (p1__35603_SHARP_ < (1000));
-}),cljs.core.drop_while.call(null,(function (p1__35604_SHARP_){
-return (p1__35604_SHARP_ < (100));
+puzzle.komachi.three_digit_primes = cljs.core.take_while.call(null,(function (p1__25413_SHARP_){
+return (p1__25413_SHARP_ < (1000));
+}),cljs.core.drop_while.call(null,(function (p1__25414_SHARP_){
+return (p1__25414_SHARP_ < (100));
 }),puzzle.komachi.prime_numbers));
 /**
  * Returns a vector of each digit of num
@@ -57,8 +57,8 @@ return and__19538__auto__;
  * Returns (partially or completely) valid combinations of prime numbers
  */
 puzzle.komachi.make_combinations = (function puzzle$komachi$make_combinations(primes,comb){
-return cljs.core.filter.call(null,puzzle.komachi.valid_QMARK_,cljs.core.map.call(null,(function (p1__35605_SHARP_){
-return cljs.core.cons.call(null,p1__35605_SHARP_,comb);
+return cljs.core.filter.call(null,puzzle.komachi.valid_QMARK_,cljs.core.map.call(null,(function (p1__25415_SHARP_){
+return cljs.core.cons.call(null,p1__25415_SHARP_,comb);
 }),primes));
 });
 /**
@@ -74,8 +74,8 @@ puzzle.komachi.seek_valid_combinations = (function puzzle$komachi$seek_valid_com
 if(cljs.core._EQ_.call(null,n,(1))){
 return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,cljs.core.List.EMPTY);
 } else {
-return puzzle.komachi.uniq.call(null,cljs.core.mapcat.call(null,(function (p1__35606_SHARP_){
-return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,p1__35606_SHARP_);
+return puzzle.komachi.uniq.call(null,cljs.core.mapcat.call(null,(function (p1__25416_SHARP_){
+return puzzle.komachi.make_combinations.call(null,puzzle.komachi.three_digit_primes,p1__25416_SHARP_);
 }),puzzle$komachi$seek_valid_combinations.call(null,(n - (1)))));
 }
 });
@@ -83,4 +83,4 @@ puzzle.komachi.solve = (function puzzle$komachi$solve(){
 return puzzle.komachi.seek_valid_combinations.call(null,(3));
 });
 
-//# sourceMappingURL=komachi.js.map?rel=1458636724081
+//# sourceMappingURL=komachi.js.map?rel=1458644157291
