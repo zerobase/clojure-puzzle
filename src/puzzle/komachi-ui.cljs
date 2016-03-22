@@ -2,6 +2,7 @@
   (:require
    [puzzle.komachi :as komachi]
    [sablono.core :as sab :include-macros true]
+   [om.core :as om :include-macros true]
    [cljs.test :as t :include-macros true :refer-macros [testing is are]])
   (:require-macros
    [devcards.core :as dc :refer [defcard deftest]]))
@@ -10,17 +11,9 @@
   "# Komachi Mushi Kui Zan (小町虫食い算)
 
    Quiz: Find three three-digit prime numbers
-   where their 9 digits are composed of 1, 2, 3, 4, 5, 6, 7, 8 and 9
-   and the sum of them ('JKL' below) is also a three-digit number.
+   where their nine digits are distinct, from 1 to 9,
+   and the sum of them is also a three-digit number.
    
-   ```
-     A B C
-     D E F
-   + G H I
-   --------
-     J K L
-   ```
-
    This puzzle was originally created by Yoshigara Takaki (吉柄貴樹)
    and printed on [C MAGAZINE February 1996 Issue][1]
    published by Gijutsu-Hyohron Co., Ltd. (技術評論社).
@@ -73,20 +66,19 @@
   "`(komachi-panel '(123 456 789))`"
   (komachi-panel '(123 456 789)))
 
-(defn update-state!
-  "Update Atom state"
-  [state key f]
-  (swap! state (fn [s] (assoc-in s key f))))
+(defn komachi-solution-component [state]
+  (let [s (:solutions @state)
+        c (count s)]
+    (om/component
+     (sab/html
+      [:div
+       [:button
+        {:onClick #(om/update! state :solutions
+                               (time (doall (komachi/solve))))}
+        "solve"]
+       (map komachi-panel s)
+       (when (pos? c) [:p "There are " c " solutions."])]))))
 
 (defcard solutions
-  (fn [state _]
-    (let [solutions (:solutions @state)]
-      (sab/html
-       [:div
-        [:button
-         {:onClick #(update-state! state [:solutions]
-                                   (time (doall (komachi/solve))))}
-         "solve"]
-        (map komachi-panel solutions)
-        [:p "There are " (count solutions) " solutions."]])))
+  (dc/om-root komachi-solution-component)
   {:solutions []})

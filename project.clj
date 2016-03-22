@@ -19,7 +19,7 @@
                  [cljsjs/react-dom "0.14.3-1"]
                  [cljsjs/react-dom-server "0.14.3-0"]
 
-                 #_[org.omcljs/om "0.9.0"]
+                 [org.omcljs/om "0.9.0"]
                  #_[reagent "0.5.1"]]
   
   :plugins [[lein-figwheel "0.5.0-6"]
